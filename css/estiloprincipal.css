@@ -1,0 +1,217 @@
+
+html{
+	font-family: Arial;
+	font-size: 20px;
+	line-height: 1rem;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-image:url('../images/haber.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: #ffe5de;
+}
+
+header{
+	background: #9bafc7;
+	font-style: inherit;
+	float: right;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	border-radius: 7rem;
+}
+
+header div ul a{
+	float: left;
+	padding-left: 3rem;
+	padding-bottom: 1rem;
+}
+header div ul a img{
+	height: 2.3rem;
+	border-radius: 4rem;
+	margin: 0.1rem;
+}
+
+header div ul a img:hover{
+	background: #ffe5de;
+	padding: 0.2rem;
+}
+
+.contenedor ul a{
+	color: white;
+	text-decoration: none;
+}
+
+div.general{
+	font-size: 1.2rem;
+	display: table;
+	border-spacing: 5rem
+	
+}
+
+.general .tema {
+	word-spacing: 1rem;
+	float: left;
+	padding-top: 14rem;
+	padding-bottom: 10rem;
+	padding-left: 5rem;
+	background: url("../images/inscrito.jpg");
+	background-size: initial;
+	background-attachment: inherit;
+}
+
+.general .contenido{
+	float: right;
+	padding-left: 3rem;
+	
+}
+
+.contenido div ul a {
+	font-size: 1rem;
+	display: block;
+	padding: 1.5rem 1.2rem;
+	text-align: right;
+	text-decoration: none;
+	
+	
+}
+
+.contenido div ul a :hover {
+	color: #ffffff;
+	padding: 1.5rem;
+	background:#9bafc7;
+	border-radius: 20px;
+}
+
+.pie{	
+	position: inherit;
+	font-size: 0.8rem;
+	background: #505c68;
+	padding: 2rem ;
+
+}
+
+.pie small{
+	color: white;
+	float: left;
+	padding-left: 2.5rem;
+}
+.pie h4{
+	color: white;
+	margin-left:  2.5rem;
+}
+
+.pie ul {
+	color: white;
+}
+
+.pie ul a{
+	color: white;
+	margin: 0.5rem;
+}
+
+.pie nav ul a{
+	color: white;
+	text-decoration: none;
+	padding-right: 3.5rem;
+	float:right;
+
+}
+.pie p{
+	padding: 10px;
+	color: white;
+	padding-left: 2.5rem;
+}
+.pie p:hover{
+	background: #5384b4;
+}
+
+.aciertos .si{
+	background: green;
+	width: 20px;
+	height: 10px;
+}
+
+.overlay{
+	position: fixed;
+	background: rgba(0,0,0,0.28);
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+}
+.overlay.active{
+	visibility: visible;
+}
+
+.popup{
+	border-radius: 25px;
+	text-align: center;
+	width: 40%;
+	height: 35%;
+	padding: 29px;
+	background: #505c68;
+	transform: scale(0.65);
+	transition: 0.55s ease all;
+	opacity: 0;
+}
+
+.popup.active{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.popup img{
+	float: right;
+	text-align: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 28px;
+}
+
+.popup img:hover{
+	background: #505c6a
+}
+
+.popup h1{
+	font-size: 45px;
+	opacity: 0;
+	margin: 25px;
+	color:white;
+
+}
+
+.popup div{
+	color: white;
+	opacity: 0;
+	margin: 25px;
+}
+
+.popup div p{
+	font-size: 26px;
+}
+
+.popup.active h1{ animation: entradaTitulo 1.8s ease 0.8s forwards;}
+.popup.active div{ animation: entradaTitulo 1.8s ease 0.8s forwards; }
+
+@keyframes entradaTitulo{
+	from{
+		transform: translateX(-30px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>actividad</title>
+	<link rel="stylesheet" href="css/actdefinicion.css">
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script> -->
+</head>
+<body>
+	<div class="contenedor">
+		<!-- <script>
+			$('#listainicial').sortable('refreshPositions')
+		</script> -->
+		<div class="contenedor-lista">
+			<h1>Seleccionar</h1>
+			<div class="lista-inicial" id="listainicial" name="grupoerror">
+
+				<div class="obje"><img src="images/drag/circ.png" alt="correo" id="imagen1" name="">
+				</div>
+				<div class="obje">
+					<img src="images/drag/ang.png" alt="ojo" id="imagen2" name="">
+				</div>
+				<div class="obje">
+					<img src="images/drag/circulo4.png" alt="main" id="imagen3" name="">
+				</div>
+				<div class="obje">
+					<img src="images/drag/angulo1.png" alt="correo" id="imagen4" name="">
+				</div>
+				<div class="obje">
+					<img src="images/drag/circ2.png" alt="ojo" id="imagen5" name="">
+				</div>
+				<div class="obje">
+					<img src="images/drag/ang4.png" alt="main" id="imagen6" name="">
+				</div>
+			</div>
+		</div>
+
+		<div class="contenedores">
+			<div class="contenedorleft">
+				<h1>  Ángulos  </h1>
+				<div class="listaleft" id="listaleft" name="grupoan">
+					<div class=" obe"></div>
+				</div>
+			</div>
+			<div class="contenedorrigth">
+				<h1>Circunferencia</h1>
+				<div class="listarigth" id="listarigth" name="grupocir">
+					<div class="obe"></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div>
+		<div class="instrucciones">
+			<h1>Instrucciones</h1>
+			<p>Seleccione una imagen del área superior</p>
+			<p>Coloque la imagen en el área indicada</p>
+			<p>Revise si coloco las imagenes en su lugar indicado</p>
+		</div>
+		<div class="aciertos">
+			<h3 id="aviso" ></h3>
+			<div id="int" background="red"></div>
+			<div id="int"></div>
+			<div id="int"></div>
+			<div id="int"></div>
+			<div id="int"></div>
+			<div id="int"></div>
+		</div>
+
+		<div class="objetivos">
+			<h1>Objetivos</h1>
+			<p>Reconocer la diferencia entre circulo y circunferencia</p>
+			<p>Reconocer los ángulos</p>
+			<p>Evaluar la atencion</p>
+		</div>
+	</div>
+	<div class="acceso">
+		<ul>
+			<a href="index.html"><img src="images/main.png"	alt="principal"></a>
+			<a href="tipos.html">Tipos</a>
+		</ul>
+		<div class="validar">
+			<input type="submit" id="reiniciar" name="reiniciar" value="intento">
+			<input type="submit" id="validar" name="continuar" value="Revisar">
+		</div>
+
+	</div>
+	<div class="overlay" id="overlay">
+		<div class="emergente"  id="emergente">
+			<img src="images/cerrar.png" id="cerrar" alt="cerrar">
+			<h2 id="felicitacion">que</h2>
+			<p id="mesage">asdfsdaf</p>
+		</div>
+	</div>
+	<script src="js/Sortablemin.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script> -->
+	<script src="js/main.js"></script>
+</body>
+</html>	

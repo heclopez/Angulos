@@ -1,0 +1,137 @@
+html{
+	font-size: 20px;
+	padding: 20px;
+	font-family: Arial;
+	line-height: 20px;
+
+}
+
+header{
+	background: #9bafc7;
+	font-style: inherit;
+	float: right;
+	padding: 0.1rem 1em;
+	display: initial;
+	border-radius: 60px;
+}
+
+header ul a{
+	float: left;
+	padding-left: 2.2rem;
+}
+
+header ul a img{
+	height: 2.3rem;
+	object-position: center;
+	border-radius: 40rem;
+}
+
+header ul a img:hover{
+	background: #ffe5de;
+}
+
+.contenido {
+	padding: 1rem 10rem;
+	display: block;
+	position: fixed;
+}
+.contenido h1{
+	font-size: 3rem;
+	text-align: center;
+	padding: 2rem;
+}
+.contenido p{
+	text-align: justify;
+	font-style: inherit;
+	word-spacing: 0.2rem;
+}
+
+.imagenes{
+	position: fixed;
+	top: 10;
+	display: table-column;
+}
+
+img{
+	position: sticky;
+	float: right;
+	height: 10rem;
+	padding: 1rem 1rem;
+}
+
+img.inter{
+	position: static;
+	float: left;
+	width: 15rem;
+	height: 15rem;
+	padding: 1rem;
+	/*display: contents;*/
+}
+
+p img.audios{
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+p img.audios:hover{
+	background: #9bafc7;
+	border-radius: 2rem;
+}
+
+div div.imagess{
+	display: table;
+}
+
+div div.imagess img{
+	padding-left: 5rem;
+	padding-top: 1rem;
+	position: sticky;
+	align-items: center;
+	float: all;
+}
+
+.acceso{
+	float: right;
+}
+
+.acceso ul{
+
+	position: fixed;
+	top:5.5rem;
+	right: 1.4rem;
+	display: table-column-group;
+}
+
+.acceso ul a{
+	font-style: none;
+	padding: 1.3rem;
+	margin:0rem;
+	background: #9bafc7;
+	display: block;
+	text-decoration: none;
+	background: #9bafc7;
+	border-radius: 130px;
+}
+.acceso ul a:hover{
+	background: #ffe5da;
+}
+
+.video {
+	border-radius: 20px;
+	float: right;
+	position: unset;;
+	padding-right: 6rem;
+	margin-top:  17rem;
+	align-content: center;
+}
+.creditos{
+	color: pink;
+	position: absolute;
+	display: flex;
+	margin-top: 38rem; 	
+}
+
+.creditos ul a{
+	color: pink;
+	text-decoration: none;
+}
